@@ -28,9 +28,15 @@ A CLI app to toggle lights on/off, change brightness and temperature.
 
 A Swift package to find and communicate with lights, toggle on/off, change brightness and temperature.
 
+Uses [Network.framework](https://developer.apple.com/documentation/network) + Bonjour to discover lights.
+
 ### Requirements
 
 - macOS 12+
 - iOS 16+
 - tvOS 16+
 - watchOS 9+
+
+## Acknowledgements
+
+- h/t to @thomaspaulmann for [the Raycast Elgato extension](https://github.com/raycast/extensions/tree/4479d612107d01bc93466c2ce7049e8b6fa79bfe/extensions/elgato-key-light/), which served as inspriation and learning for this.
