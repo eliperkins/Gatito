@@ -17,7 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2DB792F52919B7AC0018183D /* Gatito */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Gatito; sourceTree = "<group>"; };
+		2DA9D6F82919DCAC00856B63 /* Gatito */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Gatito; sourceTree = "<group>"; };
+		2DB792F52919B7AC0018183D /* Gatito */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Gatito; sourceTree = "<group>"; };
 		2DB792FB2919C7A40018183D /* LightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightView.swift; sourceTree = "<group>"; };
 		2DB792FD2919D8690018183D /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		2DE2011128DBA1840013B7EC /* Gatito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gatito.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				2DB792F52919B7AC0018183D /* Gatito */,
+				2DA9D6F82919DCAC00856B63 /* Gatito */,
 			);
 			name = Packages;
 			sourceTree = "<group>";

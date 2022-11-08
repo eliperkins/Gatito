@@ -27,6 +27,7 @@ struct LightView: View {
             Toggle(isOn: $status.isOn) {
                 if let name = status.name {
                     Text(name)
+                        .font(.headline)
                 } else {
                     Text(client.endpointURL.absoluteString)
                 }
@@ -34,12 +35,24 @@ struct LightView: View {
             .toggleStyle(.switch)
             if status.isOn {
                 VStack {
-                    Slider(value: brightnessProxy, in: 0...100) {
+                    Slider(value: brightnessProxy, in: 0...100, label: {
                         Text("Brightness")
-                    }
-                    Slider(value: temperatureProxy, in: 143...344) {
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                    }, minimumValueLabel: {
+                        Image(systemName: "light.min")
+                    }, maximumValueLabel: {
+                        Image(systemName: "light.max")
+                    })
+                    Slider(value: temperatureProxy, in: 143...344, label: {
                         Text("Temperature")
-                    }
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                    }, minimumValueLabel: {
+                        Image(systemName: "thermometer.snowflake")
+                    }, maximumValueLabel: {
+                        Image(systemName: "thermometer.sun.fill")
+                    })
                 }
             }
         }
