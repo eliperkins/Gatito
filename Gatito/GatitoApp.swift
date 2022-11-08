@@ -1,17 +1,11 @@
-//
-//  GatitoApp.swift
-//  Gatito
-//
-//  Created by Eli Perkins on 9/21/22.
-//
-
 import SwiftUI
 
 @main
 struct GatitoApp: App {
     var body: some Scene {
-        WindowGroup {
+        MenuBarExtra("Gatito", systemImage: "headlight.low.beam.fill") {
             ContentView()
         }
+        .menuBarExtraStyle(.window)
     }
 }
